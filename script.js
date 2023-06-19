@@ -9,7 +9,9 @@ function sizeChange(){
             row.style.cssText="width:50px;height:50px;";
             row.style.border="thin double red"
             row.classList.add("square");
-            row.style.
+            row.addEventListener("mouseover",()=>{
+                row.style.backgroundColor='black';
+            });
             column.appendChild(row);
         }
         column.style.display="flex";
@@ -20,7 +22,6 @@ function sizeChange(){
 
 
 }
-
 
 let size=16;
 const changeSize=document.querySelector(".prompt");
@@ -36,12 +37,9 @@ for(let i=0;i<16;i++){
         row.style.cssText="width:50px;height:50px;";
         row.style.border="thin double red"
         row.classList.add("square");
-        row.style.backgroundColor='white';
-
-        row.addEventListener("click",()=>{
+        row.addEventListener("mouseover",()=>{
             row.style.backgroundColor='black';
-    });
-
+        });
         column.appendChild(row);
     }
     column.style.display="flex";
