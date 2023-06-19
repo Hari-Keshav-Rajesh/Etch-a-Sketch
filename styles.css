@@ -1,3 +1,7 @@
+*{
+    background-color: black;
+}
+
 .prompt{
     color:white;
     font-weight: bold;
@@ -9,3 +13,12 @@
     margin-bottom:100px;
     background-color:green;
 }
+
+.grid{
+    width:960px;
+    height: 960px;
+    margin-left: 450px;
+}
+
+
+
